@@ -1,0 +1,15 @@
+{
+    "name": "test/homework",
+    "autoload": {
+        "psr-4": {
+            "Test\\Homework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vyacheslav",
+            "email": "mepa087@gmail.com"
+        }
+    ],
+    "require": {}
+}
