@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+<div class="container">
+
+<?php
+if($user){
+$userName = $_SESSION['user'];
+echo "<h2> привет,{$userName} </h2>";
+echo "<a href='./exit.php'> exit  </a>";
+} else{
+
+echo <<<END
+    <h2> привет, гость </h2>
+
+    <form action="./post.php" method="post">
+        <label > Введите ваше имя</label>
+        <input type="text" placeholder="Введите имя пользователя" name="userName">
+        <button>Отправить</button>
+    </form>
+END;
+}
+?>
+
+
+
+</div>
+</body>
+</html>
